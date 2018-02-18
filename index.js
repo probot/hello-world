@@ -1,6 +1,6 @@
 module.exports = (robot) => {
   // Your code here
-  console.log('Yay! The app was loaded!')
+  robot.log('Yay! The app was loaded!')
 
   // example of probot responding 'Hello World' to a new issue being opened
   robot.on('issues.opened', async context => {
