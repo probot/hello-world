@@ -10,7 +10,7 @@
   "repository": "your-repository-name",
   "scripts": {
     "start": "probot run ./index.js",
-    "test": "jest && standard && npm run doc-lint"
+    "test": "jest && standard"
   },
   "dependencies": {
     "bottleneck": "^1.16.0",
