@@ -12,7 +12,7 @@ To get your own Glitch-hosted Probot up-and-running, follow these steps. If you 
 1. [Configure a new app on Github](https://github.com/settings/apps/new).
     - Hit the "Show" button on the top left of this page to find the URL. It will look something like `https://random-word.glitch.me/probot`, except the domain will be specific to your app.
     - For the Webhook URL, use this URL (again, updating the domain to match yours): `https://random-word.glitch.me/`. Notice that we left off the `/probot`.
-    - For the Webhook Secret, juse use "development".
+    - For the Webhook Secret, just use "development".
     until Step 4.
     - Save your changes.
     - On the **Permissions & webhooks** tab, add read and write permissions for issues.
