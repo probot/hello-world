@@ -7,16 +7,16 @@ This is the Glitch equivalent of running `create-probot-app` to generate a new p
 
 ## Getting Started
 
-To get your own Glitch-hosted Probot up-and-running:
-
+To get your own Glitch-hosted Probot up-and-running, follow these steps. If you need more detail, the [Probot Docs](https://probot.github.io/docs/development/#configuring-a-github-app) are a great place to go to learn more.
 
 1. [Configure a new app on Github](https://github.com/settings/apps/new).
     - Hit the "Show" button on the top left of this page to find the URL. It will look something like `https://random-word.glitch.me/probot`, except the domain will be specific to your app.
-    - For the Homepage URL, use your app URL that you just found (updating the domain to match yours): `https://random-word.glitch.me/probot`
     - For the Webhook URL, use this URL (again, updating the domain to match yours): `https://random-word.glitch.me/`. Notice that we left off the `/probot`.
-    - For the Webhook Secret, open a terminal and run `openssl rand -base64 32`. Copy/paste the outputted value to the Webhook Secret box. Keep this handy
+    - For the Webhook Secret, juse use "development".
     until Step 4.
-    - Choose the permissions you want to give your bot based on what you want to build (ex. issues bot, PR bot, hybrid).
+    - Save your changes.
+    - On the **Permissions & webhooks** tab, add read and write permissions for issues.
+    - On the **Permissions & webhooks** tab, subscribe to **Issues** events.
     - Save your changes.
     - On the configuration page that comes up after saving, download your private key. It will be saved into a file named `my-app-name.2018-06-20.private-key.pem`, with your app name, and today's date.
 
