@@ -9,6 +9,7 @@
   "license": "ISC",
   "repository": "your-repository-name",
   "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
     "start": "probot run ./index.js",
     "test": "jest && standard"
   },
