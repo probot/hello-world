@@ -14,7 +14,6 @@ To get your own Glitch-hosted Probot up-and-running, follow these steps. If you 
     - For the Webhook URL, use this URL (again, updating the domain to match yours): `https://random-word.glitch.me/`. Notice that we left off the `/probot`.
     - For the Webhook Secret, just use "development".
     until Step 4.
-    - Save your changes.
     - On the **Permissions & webhooks** tab, add read and write permissions for issues.
     - On the **Permissions & webhooks** tab, subscribe to **Issues** events.
     - Save your changes.
