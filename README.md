@@ -9,9 +9,9 @@ This is the Glitch equivalent of running `create-probot-app` to generate a new p
 
 To get your own Glitch-hosted Probot up-and-running, follow these steps. If you need more detail, the [Probot Docs](https://probot.github.io/docs/development/#configuring-a-github-app) are a great place to go to learn more.
 
-1. [Configure a new app on Github](https://github.com/settings/apps/new).
-    - Hit the "Show" button on the top left of this page to find the URL. It will look something like `https://random-word.glitch.me/probot`, except the domain will be specific to your app.
-    - For the Authentication URL and the Webhook URL, use this URL (again, updating the domain to match yours): `https://random-word.glitch.me/`. Notice that we left off the `/probot`.
+1. [Configure a new app on Github](https://github.com/settings/apps), and click "New GitHub App". You might want to do this in a new window, because we will be copying-and-pasting information back and forth.
+    - Hit the "Share" button on the top left of this page, and find "Share your App" to find the URL to your App. It will look something like `https://random-word.glitch.me/`, except the domain will be specific to your app's name.
+    - For the Authentication URL and the Webhook URL, use this URL (again, updating the domain to match yours): `https://random-word.glitch.me/`.
     - For the Webhook Secret, just use "development".
     until Step 4.
     - On the **Permissions & webhooks** tab, add read and write permissions for issues.
@@ -21,13 +21,13 @@ To get your own Glitch-hosted Probot up-and-running, follow these steps. If you 
 
 2. Click the **Install** tab, and install your app into one of your repositories.
 
-3. Click the **New File** button (at left) and type `.data/private-key.pem`. Then click **Add File**. Open a terminal, and from your download folder run `cat my-app-name.2018-06-20.private-key.pem | pbcopy` (except using your app's name and today's date). In the new file in Glitch, paste the contents of the clipboard.
+3. Click the **New File** button (at left) and type `.data/private-key.pem`. Then click **Add File**. Now we need to copy the key to the clipboard. You can [follow the directions here](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) to find out how to do that on your system, bearing in mind that your private key is in your Downloads folder, and will be named like `my-app-name.2018-06-20.private-key.pem `. In the new file in Glitch, paste the contents of the clipboard.
 
 4. Edit the `.env` file (at left) with your app credentials. 
     - `APP_ID` can be found in the About section of your Github app.
     - `WEBHOOK_SECRET` is the value you generated in Step 2.
     - `PRIVATE_KEY_PATH=` should be set to `.data/private-key.pem`. 
-    - `NODE_ENV=` should be set to `production`. 
+    - `NODE_ENV=` should be set to `Production`. 
 
 5. Wait for app to load. A green `Live` label should show up next to the **Show** button when it's finished loading.
 
