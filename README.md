@@ -24,24 +24,24 @@ To get your own Glitch-hosted Probot up-and-running, follow these steps. If you 
 3. Click the **New File** button (at left) and type `.data/private-key.pem`. Then click **Add File**. Now we need to copy the key to the clipboard. Bearing in mind that your private key is in your Downloads folder, and will be named like `my-app-name.2018-06-20.private-key.pem `, do the following:
 
     Mac:
-    ```bash
+```bash
 pbcopy < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
-    ```
+```
 
     Windows:
-    ```
+```
 clip < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
-    ```
+```
     
     Linux:
-    ```bash
+```bash
 sudo apt-get install xclip
 # Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
 xclip -sel clip < ~/.ssh/id_rsa.pub
 # Copies the contents of the id_rsa.pub file to your clipboard
-    ```
+```
 
    In the new file in Glitch, paste the contents of the clipboard.
 
