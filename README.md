@@ -27,7 +27,7 @@ To get your own Glitch-hosted Probot up-and-running, follow these steps. If you 
     - `APP_ID` can be found in the About section of your Github app.
     - `WEBHOOK_SECRET` is the value you generated in Step 2.
     - `PRIVATE_KEY_PATH=` should be set to `.data/private-key.pem`. 
-    - `NODE_ENV=` should be set to `Production`. 
+    - `NODE_ENV=` should be set to `production`. 
 
 5. Wait for app to load. A green `Live` label should show up next to the **Show** button when it's finished loading.
 
