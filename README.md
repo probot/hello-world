@@ -21,7 +21,29 @@ To get your own Glitch-hosted Probot up-and-running, follow these steps. If you 
 
 2. Click the **Install** tab, and install your app into one of your repositories.
 
-3. Click the **New File** button (at left) and type `.data/private-key.pem`. Then click **Add File**. Now we need to copy the key to the clipboard. You can [follow the directions here](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) to find out how to do that on your system, bearing in mind that your private key is in your Downloads folder, and will be named like `my-app-name.2018-06-20.private-key.pem `. In the new file in Glitch, paste the contents of the clipboard.
+3. Click the **New File** button (at left) and type `.data/private-key.pem`. Then click **Add File**. Now we need to copy the key to the clipboard. Bearing in mind that your private key is in your Downloads folder, and will be named like `my-app-name.2018-06-20.private-key.pem `, do the following:
+
+    Mac:
+    ```bash
+pbcopy < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+    ```
+
+    Windows:
+    ```
+clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+    ```
+    
+    Linux:
+    ```bash
+sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+xclip -sel clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+    ```
+
+   In the new file in Glitch, paste the contents of the clipboard.
 
 4. Edit the `.env` file (at left) with your app credentials. 
     - `APP_ID` can be found in the About section of your Github app.
