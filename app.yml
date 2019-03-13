@@ -1,0 +1,4 @@
+default_events:
+- issues
+default_permissions:
+  issues: write
