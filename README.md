@@ -6,7 +6,7 @@ This is the Glitch equivalent of running `create-probot-app` to generate a new p
 To get your own Glitch-hosted Probot up-and-running, follow these steps. If you need more detail, the [Probot Docs](https://probot.github.io/docs/development/#configuring-a-github-app) are a great place to go to learn more.
 
 ## Get Started with Probot on Glitch
-1. When you [Remix](https://glitch.com/help/remix/) an app on Glitch you get your own **🤖Glitch Probot App**. 
+1. When you [Remix](https://glitch.happyfox.com/kb/article/23-what%E2%80%99s-remixing/) an app on Glitch you get your own **🤖Glitch Probot App**. 
 2. The next step is to create a **😸GitHub App**. Probot now has a handy button that does this for you automatically! Click the **Glitch 🕶 Show** button. In the [editor](https://glitch.com/edit) it's right up top to the left. 
 3. It will take you to your **🐠Glitch app URL** + `/probot`. And you'll see a button that says "Register GitHub App." Click it and it will take you to **GitHub** where you'll create a unique name for your **😸GitHub App** like "Worlds Coolest Probot"
 4. It will guide you through the steps, you'll want to install your new **😸GitHub App** to at least one repository if you want to try it out. 
