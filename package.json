@@ -4,7 +4,7 @@
   "description": "",
   "author": "",
   "license": "MIT",
-  "repository": "https://github.com/probot/hello-world.git",
+  "repository": "github:probot/hello-world",
   "scripts": {
     "start": "probot run ./index.js"
   },
