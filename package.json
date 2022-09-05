@@ -13,10 +13,5 @@
   },
   "engines": {
     "node": "12.x"
-  },
-  "renovate": {
-    "extends": [
-      "github>octokit/.github"
-    ]
   }
 }
